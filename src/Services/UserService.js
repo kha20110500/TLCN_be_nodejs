@@ -20,7 +20,7 @@ const createUser = (newUser) => {
       if (checkUser !== null) {
         resolve({
           status: "ERR",
-          message: "The email is already",
+          message: "Email đã được đăng kí ",
         });
       }
       const salt = await bcrypt.genSalt(Number(process.env.SALT));
@@ -34,7 +34,7 @@ const createUser = (newUser) => {
       if (createdUser) {
         resolve({
           status: "OK",
-          message: "CREATE thành công",
+          message: "Tạo tài khoản thành công",
           data: createdUser,
         });
       }

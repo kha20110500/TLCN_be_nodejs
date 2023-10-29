@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 dotenv.config();
-var inlineBase64 = require("nodemailer-plugin-inline-base64");
+var inlineBase64 = require(" nodemailer-plugin-inline-base64");
 
 const sendEmailCreateOrder = async (email, orderItems) => {
   let transporter = nodemailer.createTransport({
